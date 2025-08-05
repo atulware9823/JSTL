@@ -7,11 +7,11 @@
 <title>JSTL Demo</title>
 </head>
 <body>
-	<%
-	
-	String name = request.getAttribute("name").toString();
-	out.println(name);
-	
-	%>
+	<%-- <%
+	/* String name = request.getAttribute("name").toString();
+	out.println(name); */
+		%> --%>
+	<!-- Using expression language -->
+	${name}	
 </body>
 </html>
