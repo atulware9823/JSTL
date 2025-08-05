@@ -7,6 +7,11 @@
 <title>JSTL Demo</title>
 </head>
 <body>
-	Hello JSTL
+	<%
+	
+	String name = request.getAttribute("name").toString();
+	out.println(name);
+	
+	%>
 </body>
 </html>

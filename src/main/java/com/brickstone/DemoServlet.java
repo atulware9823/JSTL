@@ -13,6 +13,8 @@ import java.io.IOException;
 public class DemoServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
+		String name = "Atul";
+		request.setAttribute("name", name);
 		RequestDispatcher rd = request.getRequestDispatcher("display.jsp");
 		rd.forward(request, response);
 
